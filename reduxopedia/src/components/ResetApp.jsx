@@ -1,10 +1,9 @@
 import { useDispatch } from "react-redux";
-import { resetDestination } from "../redux/slice/destinationSlice";
+import { resetReduxOPedia } from "../redux/actions/actions";
 function ResetApp() {
   const dispatch = useDispatch();
   function resetCounterAndDestination() {
-
-    dispatch(resetDestination());
+    dispatch(resetReduxOPedia());
   }
   return (
     <div className="text-center pt-4">
