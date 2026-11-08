@@ -29,7 +29,7 @@ const destinationSlice = createSlice({
     },
     resetDestination: (state, action) => {
       state.destinationSelected = null;
-     
+      console.log(action);
     },
   },
 });
